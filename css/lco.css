@@ -96,6 +96,14 @@ a:hover {
   margin-bottom: 0;
 }
 
+.section-heading__text {
+  color: var(--legis-slate);
+  max-width: 760px;
+  line-height: 1.7;
+  margin: 0 auto;
+  text-align: center;
+}
+
 
 /* =========================
    SHARED CARD / ARTICLE HOVER
