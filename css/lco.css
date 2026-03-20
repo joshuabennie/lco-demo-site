@@ -1631,3 +1631,30 @@ a:hover {
     min-height: 240px;
   }
 }
+
+.app-feature-copy {
+  max-width: 460px;
+  margin: 0 auto;
+}
+
+.brand-spotlight__text {
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.8;
+  max-width: 620px;
+}
+
+@media (min-width: 992px) {
+  .app-feature-section .row {
+    min-height: 420px;
+  }
+
+  .app-feature-copy {
+    padding-right: 1.5rem;
+  }
+}
+
+.app-feature-card {
+  max-width: 1400px;   /* increase from default */
+  margin: 0 auto;
+  padding: 3rem 2.5rem;
+}
