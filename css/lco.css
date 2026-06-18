@@ -328,12 +328,9 @@ a:hover {
 }
 
 .spotlight-card__eyebrow {
-  display: inline-block;
   margin-bottom: 0.75rem;
   font-size: 0.8rem;
-  font-weight: 700;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
   color: rgba(255, 255, 255, 0.72);
 }
 
@@ -418,7 +415,6 @@ a:hover {
   display: inline-block;
   margin-bottom: 1rem;
   padding: 0.35rem 0.85rem;
-  border-radius: 999px;
   background: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.18);
   font-size: 0.82rem;
@@ -755,17 +751,12 @@ a:hover {
 }
 
 .brand-spotlight__eyebrow {
-  display: inline-block;
-  margin-bottom: 1rem;
   padding: 0.35rem 0.85rem;
-  border-radius: 999px;
   background: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.18);
   color: #ffffff;
   font-size: 0.82rem;
-  font-weight: 700;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
 }
 
 .brand-spotlight__title {
@@ -837,9 +828,7 @@ a:hover {
 .team-page-hero__title {
   font-size: 2.7rem;
   line-height: 1.15;
-  font-weight: 700;
   color: var(--legis-navy);
-  margin-bottom: 1rem;
 }
 
 .team-page-hero__text {
@@ -933,17 +922,12 @@ a:hover {
 }
 
 .page-hero__eyebrow {
-  display: inline-block;
-  margin-bottom: 1rem;
   padding: 0.35rem 0.85rem;
-  border-radius: 999px;
   background: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.18);
   color: #ffffff;
   font-size: 0.82rem;
-  font-weight: 700;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
 }
 
 .page-hero__title {
@@ -1002,11 +986,9 @@ a:hover {
 }
 
 .press-group__label {
-  display: inline-block;
   margin-bottom: 0.9rem;
   padding: 0.35rem 0.7rem;
   background: #eef3f6;
-  border-radius: 999px;
   color: var(--legis-navy);
   font-size: 0.85rem;
   font-weight: 700;
@@ -1089,16 +1071,12 @@ a:hover {
 }
 
 .credentialing-eyebrow {
-  display: inline-block;
   margin-bottom: 0.75rem;
   padding: 0.35rem 0.85rem;
-  border-radius: 999px;
   background: rgba(32, 61, 79, 0.08);
   color: var(--legis-navy);
   font-size: 0.82rem;
-  font-weight: 700;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
 }
 
 .credentialing-title {
@@ -1230,16 +1208,12 @@ a:hover {
 }
 
 .social-intro__eyebrow {
-  display: inline-block;
   margin-bottom: 0.75rem;
   padding: 0.35rem 0.85rem;
-  border-radius: 999px;
   background: rgba(32, 61, 79, 0.08);
   color: var(--legis-navy);
   font-size: 0.82rem;
-  font-weight: 700;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
 }
 
 .social-intro__title {
@@ -1289,16 +1263,12 @@ a:hover {
 }
 
 .social-link-card__label {
-  display: inline-block;
   margin-bottom: 0.8rem;
   padding: 0.25rem 0.7rem;
-  border-radius: 999px;
   background: rgba(201, 160, 65, 0.14);
   color: var(--legis-gold-dark);
   font-size: 0.78rem;
-  font-weight: 700;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
 }
 
 .social-link-card__title {
@@ -1415,17 +1385,13 @@ a:hover {
 }
 
 .contact-info-card__eyebrow {
-  display: inline-block;
   margin-bottom: 0.85rem;
   padding: 0.35rem 0.85rem;
-  border-radius: 999px;
   background: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.18);
   color: rgba(255, 255, 255, 0.92);
   font-size: 0.8rem;
-  font-weight: 700;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
 }
 
 .contact-info-card__title {
@@ -1443,7 +1409,6 @@ a:hover {
   font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
   color: rgba(255, 255, 255, 0.68);
   margin-bottom: 0.3rem;
 }
@@ -1512,16 +1477,12 @@ a:hover {
 }
 
 .contact-location-card__eyebrow {
-  display: inline-block;
   margin-bottom: 0.75rem;
   padding: 0.35rem 0.85rem;
-  border-radius: 999px;
   background: rgba(32, 61, 79, 0.08);
   color: var(--legis-navy);
   font-size: 0.82rem;
-  font-weight: 700;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
 }
 
 .contact-location-card__title {
