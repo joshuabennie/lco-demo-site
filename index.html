@@ -43,7 +43,111 @@
     </div>
   </header>
 
-  <!-- APP FEATURE -->
+
+  <!-- BRAND / MISSION SPOTLIGHT -->
+  <section class="brand-spotlight py-5">
+    <div class="container">
+      <div class="brand-spotlight__card p-4 p-lg-5 rounded-4">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <div class="brand-spotlight__content">
+            <span class="brand-spotlight__eyebrow d-inline-block mb-3 rounded-pill fw-bold text-uppercase">Legislative Communications Office</span>
+
+            <h1 class="brand-spotlight__title mb-4">
+              Clearer Communication for the Louisiana Legislature.
+            </h1>
+
+            <p class="brand-spotlight__text mb-3">
+              The Legislative Communications Office provides nonpartisan media, design, digital, and communication support for members and staff.
+            </p>
+
+            <p class="brand-spotlight__text mb-0">
+              Our work helps the Legislature explain its work, engage the public, and make legislative information easier to access.
+            </p>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div
+              id="homepageHeroCarousel"
+              class="carousel slide carousel-fade homepage-hero-carousel brand-spotlight__image rounded-4"
+              data-bs-ride="carousel"
+              data-bs-interval="3000"
+              data-bs-pause="hover"
+            >
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#homepageHeroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#homepageHeroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#homepageHeroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#homepageHeroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item homepage-hero-carousel__slide--plain active">
+                  <img
+                    src="images/footer-lco-image.jpg"
+                    class="d-block w-100 homepage-hero-carousel__image"
+                    alt="Legislative Communications Office media workspace"
+                    loading="lazy"
+                  >
+                </div>
+
+                <div class="carousel-item">
+                  <img
+                    src="images/SenatCham.jpg"
+                    class="d-block w-100 homepage-hero-carousel__image"
+                    alt="Louisiana Senate Chamber"
+                    loading="lazy"
+                  >
+                  <div class="carousel-caption homepage-hero-carousel__caption text-start">
+                    <h2>Senate Chamber</h2>
+                    <p>Supporting legislative work across both chambers.</p>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <img
+                    src="images/appslider.gif"
+                    class="d-block w-100 homepage-hero-carousel__image homepage-hero-carousel__image--app"
+                    alt="LALEGE app displayed on mobile devices"
+                    loading="lazy"
+                  >
+                  <div class="carousel-caption homepage-hero-carousel__caption text-start">
+                    <h2>LALEGE App</h2>
+                    <p>Bringing legislative information directly to citizens’ devices.</p>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <img
+                    src="images/MediaMem.jpg"
+                    class="d-block w-100 homepage-hero-carousel__image"
+                    alt="Legislative public information and media support"
+                    loading="lazy"
+                  >
+                  <div class="carousel-caption homepage-hero-carousel__caption text-start">
+                    <h2>Public Information</h2>
+                    <p>Helping connect the Legislature, media, and public.</p>
+                  </div>
+                </div>
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#homepageHeroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#homepageHeroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- APP FEATURE -->
   <section class="py-5 app-feature-section" id="app">
     <div class="container-xxl px-4 px-lg-5">
       <div class="app-feature-card mx-auto p-4 p-lg-5 rounded-4 shadow-sm">
@@ -80,53 +184,83 @@
     </div>
   </section>
 
-  <!-- BRAND / MISSION SPOTLIGHT -->
-  <section class="brand-spotlight py-5">
+<!-- OFFICE PHOTO CAROUSEL / STUDIO MARKETING -->
+  <section class="office-showcase py-5">
     <div class="container">
-      <div class="brand-spotlight__card p-4 p-lg-5 rounded-4">
-        <div class="row align-items-center g-4">
-          <div class="col-lg-7">
-            <span class="brand-spotlight__eyebrow d-inline-block mb-3 rounded-pill fw-bold text-uppercase">Legislative Communications Office</span>
+      <div class="row align-items-center g-4 g-xl-5">
+        <div class="col-lg-7">
+          <div id="officePhotoCarousel" class="carousel slide office-carousel shadow-sm" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#officePhotoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Office photo 1"></button>
+              <button type="button" data-bs-target="#officePhotoCarousel" data-bs-slide-to="1" aria-label="Office photo 2"></button>
+              <!--button type="button" data-bs-target="#officePhotoCarousel" data-bs-slide-to="2" aria-label="Office photo 3"></button-->
+              <!--button type="button" data-bs-target="#officePhotoCarousel" data-bs-slide-to="3" aria-label="Office photo 4"></button-->
+            </div>
 
-            <h1 class="brand-spotlight__title mb-4">
-              <strong>Advancing the Louisiana Legislature</strong> through communication, media, design, and digital support.
-            </h1>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/newsroomgallery/MediaRoom1.jpg" class="d-block w-100 office-carousel__image" alt="Legislative Communications Office team working in the Capitol">
+              </div>
 
-            <p class="brand-spotlight__text mb-3">
-              The mission of the Legislative Communications Office is to advance the Louisiana Legislature by helping its members and staff gather, consider, and fully discuss ideas; increase public engagement; foster confidence; and build goodwill.
-            </p>
+              <div class="carousel-item">
+                <img src="images/newsroomgallery/MediaRoom2.jpg" class="d-block w-100 office-carousel__image" alt="LCO staff preparing media coverage">
+              </div>
 
-            <p class="brand-spotlight__text mb-0">
-              We support both chambers with non-partisan communication strategy, public information services, creative production, and digital outreach built for modern legislative engagement.
-            </p>
+              <!--div class="carousel-item">
+                <img src="images/newsroomgallery/new/Y40A0261.jpg" class="d-block w-100 office-carousel__image" alt="Behind-the-scenes media production at the Legislative Communications Office">
+              </div-->
+
+              <!--div class="carousel-item">
+                <img src="images/newsroomgallery/new/Y40A0265.jpg" class="d-block w-100 office-carousel__image" alt="Office photo from the Legislative Communications Office">
+              </div-->
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#officePhotoCarousel" data-bs-slide="prev" aria-label="Previous office photo">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#officePhotoCarousel" data-bs-slide="next" aria-label="Next office photo">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
           </div>
+        </div>
 
-          <div class="col-lg-5">
-            <img
-              src="images/footer-lco-image.jpg"
-              alt="Legislative Communications Office"
-              class="brand-spotlight__image img-fluid rounded-4"
-              loading="lazy"
-            >
+        <div class="col-lg-5">
+          <div class="office-showcase__copy">
+            <span class="office-showcase__eyebrow d-inline-block rounded-pill fw-bold text-uppercase">Office Showcase</span>
+
+            <h2 class="office-showcase__title">
+              Bring your message into the studio.
+            </h2>
+
+            <p class="office-showcase__text">
+              LCO's in-house video studio gives elected officials and legislative offices a polished, Capitol-ready space for interviews, public updates, explainers, social clips, and constituent-facing content.
+            </p>
+
+            <p class="office-showcase__text">
+              From camera setup and lighting to editing and distribution guidance, our team can help turn policy work into clear, credible content for the audiences you serve.
+            </p>
+
+            <a href="contact.html" class="btn btn-legis-primary rounded-pill px-4 py-2">Book Studio Time</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SUPPORT / HIGHLIGHTS -->
+<!-- SUPPORT / HIGHLIGHTS -->
   <section class="homepage-hero py-5">
     <div class="container">
-      <div class="row align-items-center g-4">
+      <div class="row align-items-center g-4 g-xl-5">
         <div class="col-lg-5">
-          <div class="hero-brand-block">
+          <div class="hero-brand-block p-4 p-lg-5 rounded-4 shadow-sm">
             <img src="images/logo@2x.png" alt="LCO Logo" class="hero-logo hero-logo--intro img-fluid" loading="lazy">
 
             <p class="hero-text mt-4">
               The Legislative Communications Office helps Louisiana lawmakers and staff connect with the public through clear messaging, creative services, video and audio production, digital publishing, and statewide media support.
             </p>
 
-            <div class="hero-actions d-flex flex-wrap align-items-center gap-2">
+            <div class="hero-actions d-flex flex-wrap align-items-center gap-3">
               <a href="what-we-do.html" class="btn btn-legis-primary rounded-pill px-4 py-2">Explore Services</a>
               <a href="staff.html" class="btn btn-legis-outline-dark rounded-pill px-4 py-2">Meet Our Team</a>
             </div>
@@ -135,17 +269,20 @@
 
         <div class="col-lg-7">
           <div class="hero-highlights d-grid gap-3">
-            <div class="highlight-item p-3 rounded-3 shadow-sm">
+            <div class="highlight-item p-4 rounded-4 shadow-sm">
+              <span class="highlight-item__icon" aria-hidden="true"></span>
               <strong>Communication</strong>
               <p>Strategic messaging, public engagement, and non-partisan communications support for legislative offices.</p>
             </div>
 
-            <div class="highlight-item p-3 rounded-3 shadow-sm">
+            <div class="highlight-item p-4 rounded-4 shadow-sm">
+              <span class="highlight-item__icon" aria-hidden="true"></span>
               <strong>Media Production</strong>
               <p>Video, audio, photography, and live legislative coverage that keeps the public informed.</p>
             </div>
 
-            <div class="highlight-item p-3 rounded-3 shadow-sm">
+            <div class="highlight-item p-4 rounded-4 shadow-sm">
+              <span class="highlight-item__icon" aria-hidden="true"></span>
               <strong>Digital Services</strong>
               <p>Web design, streaming, publishing, and digital experiences that support access to legislative information.</p>
             </div>
@@ -155,11 +292,12 @@
     </div>
   </section>
 
-  <!-- FEATURED RESOURCE -->
+<!-- FEATURED RESOURCE -->
   <section class="py-5 spotlight-section">
-    <div class="container">
-      <div class="spotlight-card p-4 p-lg-5 rounded-4">
-        <div class="row align-items-center g-4">
+    <div class="container-fluid px-0">
+      <div class="spotlight-card spotlight-card--wide p-4 p-lg-5">
+        <div class="spotlight-card__inner mx-auto px-4 px-lg-5">
+        <div class="row align-items-center justify-content-between g-4">
           <div class="col-lg-8">
             <span class="spotlight-card__eyebrow d-inline-block rounded-pill fw-bold text-uppercase">Featured Resource</span>
 
@@ -176,11 +314,12 @@
             <a href="press-credentialing.html" class="btn btn-legis-primary">Learn More</a>
           </div>
         </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+<!-- FOOTER -->
   <footer class="footer-strip py-3">
     <div class="container d-md-flex justify-content-between align-items-center gap-2">
       <div>Louisiana Legislature · Legislative Communications Office</div>
