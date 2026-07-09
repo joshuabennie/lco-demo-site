@@ -136,9 +136,13 @@ a:hover {
 }
 
 .nav-logo {
-  height: 44px;
+  height: 82px;
   width: auto;
   display: block;
+}
+
+body > section:last-of-type {
+  padding-bottom: 0 !important;
 }
 
 .site-header .container,
@@ -1072,6 +1076,24 @@ a:hover {
   margin-bottom: 0.35rem;
 }
 
+.team-feature-card__image-wrap {
+  overflow: hidden;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  aspect-ratio: 4 / 5;
+}
+
+.team-feature-card__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-feature-card__body {
+  padding: 0.25rem 0;
+}
+
 .team-feature-card__role {
   color: #f4db9e;
   font-weight: 600;
@@ -1800,7 +1822,7 @@ a:hover {
   }
 
   .nav-logo {
-    height: 38px;
+    height: 70px;
   }
 
   .lco-hero__title {
@@ -1895,7 +1917,7 @@ a:hover {
   }
 
   .nav-logo {
-    height: 34px;
+    height: 60px;
   }
 
   .lco-hero__title {
