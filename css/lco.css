@@ -45,6 +45,8 @@
   --legis-white: #ffffff;
   --font-body: 'Montserrat', Arial, Helvetica, sans-serif;
   --font-heading: 'Montserrat', Arial, Helvetica, sans-serif;
+  --bs-body-font-family: var(--font-body);
+  --bs-font-sans-serif: var(--font-body);
   --card-hover-transform: translateY(-4px);
   --card-hover-shadow: 0 14px 30px rgba(21, 34, 45, 0.12);
 }
@@ -59,6 +61,13 @@ body {
   font-family: var(--font-body);
   background: var(--legis-bg);
   color: #24323c;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: var(--font-body);
 }
 
 a {
