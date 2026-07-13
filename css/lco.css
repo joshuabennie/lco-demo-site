@@ -43,6 +43,8 @@
   --legis-border: #d9dee2;
   --legis-bg: #f5f7f9;
   --legis-white: #ffffff;
+  --font-body: 'Montserrat', Arial, Helvetica, sans-serif;
+  --font-heading: 'Montserrat', Arial, Helvetica, sans-serif;
   --card-hover-transform: translateY(-4px);
   --card-hover-shadow: 0 14px 30px rgba(21, 34, 45, 0.12);
 }
@@ -54,7 +56,7 @@
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
   background: var(--legis-bg);
   color: #24323c;
 }
@@ -73,16 +75,29 @@ a:hover {
    BUTTONS
 ========================================================= */
 
+.btn-legis-primary,
+.btn-legis-outline-dark,
+.btn-legis-outline {
+  border-radius: 8px;
+  padding: 0.7rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.2;
+  transition: background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease, box-shadow 0.18s ease;
+}
+
 .btn-legis-primary {
   background: var(--legis-gold);
   border: 1px solid var(--legis-gold);
   color: #1b2b37;
 }
 
-.btn-legis-primary:hover {
+.btn-legis-primary:hover,
+.btn-legis-primary:focus-visible {
   background: #d7af57;
   border-color: #d7af57;
   color: #1b2b37;
+  box-shadow: 0 0 0 0.2rem rgba(201, 160, 65, 0.22);
 }
 
 .btn-legis-outline-dark {
@@ -91,9 +106,11 @@ a:hover {
   color: var(--legis-navy);
 }
 
-.btn-legis-outline-dark:hover {
+.btn-legis-outline-dark:hover,
+.btn-legis-outline-dark:focus-visible {
   background: var(--legis-navy);
   color: #fff;
+  box-shadow: 0 0 0 0.2rem rgba(32, 61, 79, 0.16);
 }
 
 .btn-legis-outline {
@@ -102,9 +119,11 @@ a:hover {
   background: transparent;
 }
 
-.btn-legis-outline:hover {
+.btn-legis-outline:hover,
+.btn-legis-outline:focus-visible {
   background: rgba(255, 255, 255, 0.1);
   color: var(--legis-white);
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.16);
 }
 
 
@@ -167,8 +186,6 @@ body > section:last-of-type {
 .lco-team-card,
 .highlight-item,
 .app-feature-card,
-.spotlight-card,
-.contact-banner,
 .hero-media-card,
 .lco-hero-card,
 .brand-spotlight__card {
@@ -181,8 +198,6 @@ body > section:last-of-type {
 .lco-team-card:hover,
 .highlight-item:hover,
 .app-feature-card:hover,
-.spotlight-card:hover,
-.contact-banner:hover,
 .hero-media-card:hover,
 .lco-hero-card:hover,
 .brand-spotlight__card:hover {
@@ -430,90 +445,11 @@ body > section:last-of-type {
   border-radius: 16px;
 }
 
-.homepage-hero-carousel {
-  position: relative;
-  overflow: hidden;
-  background: #10202c;
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.22);
-}
-
-.homepage-hero-carousel .carousel-inner,
-.homepage-hero-carousel .carousel-item {
-  min-height: 430px;
-}
-
-.homepage-hero-carousel .carousel-item:not(.homepage-hero-carousel__slide--plain)::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  pointer-events: none;
-  background:
-    linear-gradient(180deg, rgba(5, 18, 29, 0.08) 0%, rgba(5, 18, 29, 0.78) 100%),
-    linear-gradient(90deg, rgba(5, 18, 29, 0.68) 0%, rgba(5, 18, 29, 0.12) 60%);
-}
-
-.homepage-hero-carousel__image {
+.homepage-feature-image {
   height: 430px;
   object-fit: cover;
   object-position: center;
-}
-
-.homepage-hero-carousel__image--app {
-  object-position: 0% center;
-}
-
-.homepage-hero-carousel__caption {
-  right: 1.5rem;
-  bottom: 1.75rem;
-  left: 1.5rem;
-  z-index: 2;
-  padding: 0;
-}
-
-.homepage-hero-carousel__caption h2 {
-  margin-bottom: 0.35rem;
-  color: #ffffff;
-  font-family: var(--font-heading);
-  font-size: clamp(1.25rem, 2vw, 1.8rem);
-  font-weight: 700;
-  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
-}
-
-.homepage-hero-carousel__caption p {
-  max-width: 34rem;
-  margin-bottom: 0;
-  color: rgba(255, 255, 255, 0.86);
-  font-size: 0.95rem;
-  line-height: 1.55;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
-}
-
-.homepage-hero-carousel .carousel-indicators {
-  right: 1.5rem;
-  bottom: 0.75rem;
-  left: auto;
-  z-index: 3;
-  margin: 0;
-}
-
-.homepage-hero-carousel .carousel-indicators [data-bs-target] {
-  width: 0.55rem;
-  height: 0.55rem;
-  border: 0;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.62);
-}
-
-.homepage-hero-carousel .carousel-indicators .active {
-  background-color: var(--legis-gold);
-}
-
-.homepage-hero-carousel .carousel-control-prev,
-.homepage-hero-carousel .carousel-control-next {
-  z-index: 3;
-  width: 12%;
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.22);
 }
 
 .brand-spotlight__eyebrow {
@@ -806,7 +742,7 @@ body > section:last-of-type {
 }
 
 .spotlight-section {
-  padding: 6.5rem 0 5.75rem;
+  padding: 6.5rem 0 0;
 }
 
 .spotlight-card {
@@ -819,7 +755,6 @@ body > section:last-of-type {
 .spotlight-card--wide {
   width: 100%;
   padding-block: clamp(3.75rem, 7vw, 5.75rem) !important;
-  box-shadow: 0 24px 58px rgba(32, 61, 79, 0.18);
 }
 
 .spotlight-card__inner {
@@ -895,8 +830,6 @@ body > section:last-of-type {
 .lco-hero__actions .btn {
   margin-right: 0.75rem;
   margin-bottom: 0.75rem;
-  border-radius: 999px;
-  padding: 0.75rem 1.25rem;
   font-weight: 600;
 }
 
@@ -1649,52 +1582,9 @@ body > section:last-of-type {
   max-width: 100%;
 }
 
-.social-feed-card__body--placeholder {
-  min-height: 240px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.social-placeholder-text {
-  color: var(--legis-slate);
-  line-height: 1.7;
-  margin-bottom: 1rem;
-}
-
-
 /* =========================================================
    CONTACT PAGE
 ========================================================= */
-
-.contact-banner {
-  background: linear-gradient(135deg, var(--legis-navy), #284f67);
-  color: #fff;
-  padding: 2rem;
-  border-radius: 18px;
-  box-shadow: 0 18px 36px rgba(32, 61, 79, 0.18);
-}
-
-.contact-banner__title {
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin-bottom: 0.4rem;
-}
-
-.contact-banner__text {
-  color: rgba(255, 255, 255, 0.88);
-  margin-bottom: 0;
-  line-height: 1.7;
-}
-
-.contact-banner__phone {
-  display: inline-block;
-  margin-top: 1rem;
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #fff;
-}
 
 .contact-page-section {
   background: var(--legis-bg);
@@ -1731,61 +1621,17 @@ body > section:last-of-type {
   background: #fff;
 }
 
-.contact-location-section {
-  background: #ffffff;
-}
-
-.contact-location-card {
-  background: linear-gradient(135deg, #f8fafb, #eef3f6);
-  border: 1px solid var(--legis-border);
-  border-radius: 24px;
-  padding: 2rem;
-  box-shadow: 0 18px 36px rgba(32, 61, 79, 0.08);
-}
-
-.contact-location-card__eyebrow {
-  margin-bottom: 0.75rem;
-  padding: 0.35rem 0.85rem;
-  background: rgba(32, 61, 79, 0.08);
-  color: var(--legis-navy);
-  font-size: 0.82rem;
-  letter-spacing: 0.08em;
-}
-
-.contact-location-card__title {
-  color: var(--legis-navy);
-  font-size: 1.9rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-.contact-location-card__text {
-  color: var(--legis-slate);
-  line-height: 1.8;
-  margin-bottom: 1rem;
-}
-
-.contact-location-card__image-wrap {
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 18px 32px rgba(21, 34, 45, 0.12);
-  min-height: 320px;
-}
-
-.contact-location-card__image {
-  min-height: 320px;
-  background: url('../images/rotunda.jpg') center center / cover no-repeat;
-}
-
-
 /* =========================================================
    FOOTER
 ========================================================= */
 
 .footer-strip {
-  background: var(--legis-navy);
-  color: rgba(255, 255, 255, 0.8);
+  background: #1d4054;
+  color: #ffffff;
   font-size: 0.95rem;
+  margin: 0;
+  border-top: 0;
+  border-radius: 0;
 }
 
 
@@ -1850,27 +1696,8 @@ body > section:last-of-type {
     max-width: 100%;
   }
 
-  .homepage-hero-carousel .carousel-inner,
-  .homepage-hero-carousel .carousel-item {
-    min-height: 320px;
-  }
-
-  .homepage-hero-carousel__image {
+  .homepage-feature-image {
     height: 320px;
-  }
-
-  .homepage-hero-carousel__caption {
-    right: 1rem;
-    bottom: 1.5rem;
-    left: 1rem;
-  }
-
-  .homepage-hero-carousel__caption p {
-    font-size: 0.88rem;
-  }
-
-  .homepage-hero-carousel .carousel-indicators {
-    right: 1rem;
   }
 }
 
@@ -1886,8 +1713,7 @@ body > section:last-of-type {
     font-size: 1.9rem;
   }
 
-  .spotlight-card,
-  .contact-banner {
+  .spotlight-card {
     padding: 1.5rem;
   }
 
@@ -1944,7 +1770,7 @@ body > section:last-of-type {
 
   .brand-spotlight__title {
     color: #ffffff;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-heading);
     font-size: clamp(2rem, 7vw, 2.75rem);
     line-height: 1.08;
     font-weight: 700;
@@ -2073,19 +1899,13 @@ body > section:last-of-type {
 
 @media (max-width: 991.98px) {
   .contact-info-card,
-  .contact-form-card__header,
-  .contact-location-card {
+  .contact-form-card__header {
     padding: 1.5rem;
-  }
-
-  .contact-location-card__title {
-    font-size: 1.6rem;
   }
 }
 
 @media (max-width: 767.98px) {
-  .contact-info-card,
-  .contact-location-card {
+  .contact-info-card {
     padding: 1.25rem;
   }
 
@@ -2095,11 +1915,6 @@ body > section:last-of-type {
 
   .contact-form-card__title {
     font-size: 1.35rem;
-  }
-
-  .contact-location-card__image-wrap,
-  .contact-location-card__image {
-    min-height: 240px;
   }
 }
 

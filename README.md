@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Legislative Communications Office (LCO) Website is a modernized static website prototype for the Louisiana Legislature's Legislative Communications Office. The site presents LCO services, staff information, press resources, credentialing information, social media links, and contact options in a consistent Bootstrap-based layout.
+The Legislative Communications Office (LCO) Website is a modernized static website for the Louisiana Legislature's Legislative Communications Office. The site presents LCO services, staff information, press resources, credentialing information, social media links, and contact options in a consistent Bootstrap-based layout.
 
 This project has been updated to Bootstrap 5.3.8 and organized for easier long-term maintenance. The current structure favors Bootstrap utilities for layout and spacing while preserving LCO branding, Louisiana legislative identity, custom imagery, and page-specific visual treatments.
 
@@ -37,7 +37,7 @@ lco-demo-site/
 ### Page Overview
 
 - `index.html`  
-  Homepage prototype featuring the LALEGE app, LCO mission messaging, service highlights, and calls to action.
+  Homepage featuring the LALEGE app, LCO mission messaging, service highlights, and calls to action.
 
 - `staff.html`  
   Staff directory page with team member cards, staff roles, and contact-oriented support information.
