@@ -1536,55 +1536,6 @@ body > section:last-of-type {
   margin-bottom: 1.25rem;
 }
 
-.social-feed-section {
-  background: #ffffff;
-}
-
-.social-feed-card {
-  background: #ffffff;
-  border: 1px solid var(--legis-border);
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 12px 28px rgba(21, 34, 45, 0.06);
-  height: 100%;
-}
-
-.social-feed-card__header {
-  padding: 1.25rem 1.5rem;
-  border-bottom: 1px solid var(--legis-border);
-  background: linear-gradient(135deg, #f8fafb, #eef3f6);
-}
-
-.social-feed-card__title {
-  color: var(--legis-navy);
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-bottom: 0.2rem;
-}
-
-.social-feed-card__subtext {
-  color: var(--legis-slate);
-  font-size: 0.95rem;
-}
-
-.social-feed-card__body {
-  padding: 1.5rem;
-  background: #fff;
-}
-
-.social-feed-card__body--center {
-  display: flex;
-  justify-content: center;
-}
-
-.social-feed-embed {
-  display: block;
-  width: 100%;
-  max-width: 500px;
-  min-width: 0;
-  height: 700px;
-  border: 0;
-}
 
 /* =========================================================
    CONTACT PAGE
@@ -1920,9 +1871,7 @@ body > section:last-of-type {
 }
 
 @media (max-width: 767.98px) {
-  .social-intro-card,
-  .social-feed-card__header,
-  .social-feed-card__body {
+  .social-intro-card {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
