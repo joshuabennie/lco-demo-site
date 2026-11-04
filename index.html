@@ -11,6 +11,10 @@
 </head>
 
 <body>
+  <a class="visually-hidden-focusable" href="#main-content">
+    Skip to main content
+  </a>
+
   <header class="site-header">
     <div class="container">
       <nav class="navbar navbar-expand-lg px-0 py-3">
@@ -43,6 +47,7 @@
     </div>
   </header>
 
+  <main id="main-content">
 
   <!-- BRAND / MISSION SPOTLIGHT -->
   <section class="brand-spotlight py-5">
@@ -87,7 +92,6 @@
         <div class="row align-items-center g-4">
           <div class="col-lg-5">
             <div class="section-heading mb-0 app-feature-copy">
-              <span class="spotlight-card__eyebrow d-inline-block rounded-pill fw-bold text-uppercase text-dark">Featured Digital Resource</span>
 
               <h2 class="section-heading__title">
                 The Official LALEGE App
@@ -167,7 +171,7 @@
             </h2>
 
             <p class="office-showcase__text">
-              LCO's in-house video studio gives elected officials and legislative offices a polished, Capitol-ready space for interviews, public updates, explainers, social clips, and constituent-facing content.
+              LCO's in-house video studio gives legislative officials and legislative offices a polished, Capitol-ready space for interviews, public updates, explainers, social clips, and constituent-facing content.
             </p>
 
             <p class="office-showcase__text">
@@ -232,7 +236,6 @@
         <div class="spotlight-card__inner mx-auto px-4 px-lg-5">
         <div class="row align-items-center justify-content-between g-4">
           <div class="col-lg-8">
-            <span class="spotlight-card__eyebrow d-inline-block rounded-pill fw-bold text-uppercase">Featured Resource</span>
 
             <h2 class="spotlight-card__title">
               Press Credentialing
@@ -252,11 +255,17 @@
     </div>
   </section>
 
-<!-- FOOTER -->
+  </main>
+
+  <!-- FOOTER -->
   <footer class="footer-strip py-3">
-    <div class="container d-md-flex justify-content-between align-items-center gap-2">
-      <div>Louisiana Legislature · Legislative Communications Office</div>
-      <div>Legislative Communications Office</div>
+    <div class="container d-md-flex justify-content-between align-items-center gap-3">
+      <div>Louisiana Legislature · Legislative Communications Office · Web Team</div>
+      <div class="footer-strip__links d-flex flex-wrap align-items-center gap-2 gap-md-3">
+        <span class="footer-strip__link-label">Official websites</span>
+        <a href="https://house.louisiana.gov/" target="_blank" rel="noopener noreferrer">House</a>
+        <a href="https://senate.la.gov/" target="_blank" rel="noopener noreferrer">Senate</a>
+      </div>
     </div>
   </footer>
 

@@ -13,7 +13,7 @@ This project has been updated to Bootstrap 5.3.8 and organized for easier long-t
 - HTML5
 - CSS3
 - Bootstrap 5.3.8
-- Google Fonts (Inter)
+- Google Fonts (Montserrat)
 - Vanilla JavaScript (Bootstrap Bundle)
 
 ---
@@ -58,7 +58,7 @@ lco-demo-site/
   Contact page with office information and an embedded JotForm contact form.
 
 - `css/lco.css`  
-  Main custom stylesheet for LCO branding, page-specific treatments, shared components, image styling, hover effects, and responsive refinements.
+  Main custom stylesheet for LCO branding, Montserrat typography, page-specific treatments, shared components, image styling, hover effects, shared pre-footer CTA styling, and responsive refinements.
 
 - `images/`  
   Image and media assets used throughout the site, including logos, staff photos, page imagery, and supporting visual assets.
@@ -102,15 +102,16 @@ Current stylesheet organization:
 9. Homepage / Brand Spotlight
 10. Homepage / Hero
 11. Homepage / Highlights
-12. Homepage / Featured Resource
-13. Staff / Team Page
-14. What We Do / Services Page
-15. Press Releases Page
-16. Press Credentialing Page
-17. Social Media Page
-18. Contact Page
-19. Footer
-20. Responsive Media Queries
+12. Homepage / Office Showcase
+13. Homepage / Featured Resource
+14. Staff / Team Page
+15. What We Do / Services Page
+16. Press Releases Page
+17. Press Credentialing Page
+18. Social Media Page
+19. Contact Page
+20. Footer
+21. Responsive Media Queries
 
 Branding, colors, gradients, typography, image treatments, background imagery, custom buttons, and hover effects remain in CSS. General layout, spacing, alignment, and sizing should use Bootstrap utilities where practical.
 
@@ -146,6 +147,7 @@ When adding or updating components, keep existing custom class names when they s
 ## Accessibility Notes
 
 - Use meaningful `alt` text for informative images.
+- Provide a skip link and one primary `<main id="main-content">` landmark on each page.
 - Preserve a logical heading hierarchy on every page.
 - Use `rel="noopener noreferrer"` on external links that open with `target="_blank"`.
 - Use `loading="lazy"` for non-critical images below the first viewport.

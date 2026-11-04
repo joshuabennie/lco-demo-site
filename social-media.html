@@ -9,9 +9,13 @@
   <link rel="stylesheet" href="css/lco.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0"></script>
+  <script src="js/social-feeds.js" defer></script>
 </head>
 <body>
+  <a class="visually-hidden-focusable" href="#main-content">
+    Skip to main content
+  </a>
+
   <header class="site-header">
     <div class="container">
     <nav class="navbar navbar-expand-lg px-0 py-3">
@@ -49,7 +53,9 @@
     </div>
   </header>
 
- <section class="page-hero page-hero--social py-5">
+  <main id="main-content">
+
+  <section class="page-hero page-hero--social py-5">
     <div class="container">
       <div class="page-hero__content">
         <span class="page-hero__eyebrow d-inline-block mb-3 rounded-pill fw-bold text-uppercase">Legislative Communications Office</span>
@@ -145,19 +151,12 @@
               <span class="social-feed-card__subtext">@LouisianaHouse</span>
             </div>
             <div class="social-feed-card__body social-feed-card__body--center">
-              <div class="fb-page"
-                   data-href="https://www.facebook.com/LouisianaHouse"
-                   data-tabs="timeline"
-                   data-width="600"
-                   data-height="700"
-                   data-small-header="false"
-                   data-adapt-container-width="true"
-                   data-hide-cover="false"
-                   data-show-facepile="false">
-                <blockquote cite="https://www.facebook.com/LouisianaHouse" class="fb-xfbml-parse-ignore">
-                  <a href="https://www.facebook.com/LouisianaHouse">Louisiana House of Representatives</a>
-                </blockquote>
-              </div>
+              <iframe class="social-feed-embed"
+                      data-page-url="https://www.facebook.com/LouisianaHouse"
+                      src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FLouisianaHouse&amp;tabs=timeline&amp;width=500&amp;height=700&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=false"
+                      title="Louisiana House Facebook timeline"
+                      width="500" height="700" loading="lazy"
+                      allow="encrypted-media; picture-in-picture; web-share"></iframe>
             </div>
           </div>
         </div>
@@ -169,19 +168,12 @@
               <span class="social-feed-card__subtext">@LouisianaSenate</span>
             </div>
             <div class="social-feed-card__body social-feed-card__body--center">
-              <div class="fb-page"
-                   data-href="https://www.facebook.com/LouisianaSenate"
-                   data-tabs="timeline"
-                   data-width="600"
-                   data-height="700"
-                   data-small-header="false"
-                   data-adapt-container-width="true"
-                   data-hide-cover="false"
-                   data-show-facepile="false">
-                <blockquote cite="https://www.facebook.com/LouisianaSenate" class="fb-xfbml-parse-ignore">
-                  <a href="https://www.facebook.com/LouisianaSenate">Louisiana State Senate</a>
-                </blockquote>
-              </div>
+              <iframe class="social-feed-embed"
+                      data-page-url="https://www.facebook.com/LouisianaSenate"
+                      src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FLouisianaSenate&amp;tabs=timeline&amp;width=500&amp;height=700&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=false"
+                      title="Louisiana Senate Facebook timeline"
+                      width="500" height="700" loading="lazy"
+                      allow="encrypted-media; picture-in-picture; web-share"></iframe>
             </div>
           </div>
         </div>
@@ -196,7 +188,6 @@
         <div class="spotlight-card__inner mx-auto px-4 px-lg-5">
         <div class="row align-items-center justify-content-between g-4">
           <div class="col-lg-8">
-            <span class="spotlight-card__eyebrow d-inline-block rounded-pill fw-bold text-uppercase">Digital Communications</span>
 
             <h2 class="spotlight-card__title">
               Connect With the Legislative Communications Office
@@ -218,10 +209,16 @@
     </div>
   </section>
 
+  </main>
+
  <footer class="footer-strip py-3">
-  <div class="container d-md-flex justify-content-between align-items-center gap-2">
-      <div>Louisiana Legislature · Legislative Communications Office</div>
-      <div>Social Media</div>
+  <div class="container d-md-flex justify-content-between align-items-center gap-3">
+      <div>Louisiana Legislature · Legislative Communications Office · Web Team</div>
+      <div class="footer-strip__links d-flex flex-wrap align-items-center gap-2 gap-md-3">
+        <span class="footer-strip__link-label">Official websites</span>
+        <a href="https://house.louisiana.gov/" target="_blank" rel="noopener noreferrer">House</a>
+        <a href="https://senate.la.gov/" target="_blank" rel="noopener noreferrer">Senate</a>
+      </div>
     </div>
   </footer>
 

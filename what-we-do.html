@@ -10,6 +10,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+  <a class="visually-hidden-focusable" href="#main-content">
+    Skip to main content
+  </a>
+
   <header class="site-header">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light px-0 py-3">
@@ -54,6 +58,8 @@
     </div>
   </header>
 
+  <main id="main-content">
+
   <section class="brand-spotlight brand-spotlight--inner py-5">
     <div class="container">
       <div class="brand-spotlight__card">
@@ -72,8 +78,7 @@
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#whatWeDoHeroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Committee Coverage"></button>
                 <button type="button" data-bs-target="#whatWeDoHeroCarousel" data-bs-slide-to="1" aria-label="Press and Public Information"></button>
-                <button type="button" data-bs-target="#whatWeDoHeroCarousel" data-bs-slide-to="2" aria-label="Senate Chamber"></button>
-                <button type="button" data-bs-target="#whatWeDoHeroCarousel" data-bs-slide-to="3" aria-label="House Chamber"></button>
+                <button type="button" data-bs-target="#whatWeDoHeroCarousel" data-bs-slide-to="2" aria-label="Constituency Outreach"></button>
               </div>
 
               <div class="carousel-inner">
@@ -93,19 +98,12 @@
                   </div>
                 </div>
 
-                <div class="carousel-item" data-bs-interval="3000">
-                  <img src="images/SenatCham.jpg" class="d-block w-100 what-we-do-hero-carousel__image" alt="Louisiana Senate Chamber">
-                  <div class="carousel-caption what-we-do-hero-carousel__caption text-start">
-                    <h2>Senate Chamber</h2>
-                    <p>Documenting the work of Louisiana’s upper chamber.</p>
-                  </div>
-                </div>
 
                 <div class="carousel-item" data-bs-interval="3000">
-                  <img src="images/HouseCham.jpg" class="d-block w-100 what-we-do-hero-carousel__image" alt="Louisiana House Chamber">
+                  <img src="images/newsroomgallery/MediaRoom1.jpg" class="d-block w-100 what-we-do-hero-carousel__image" alt="Legislative Communications Office video studio workspace">
                   <div class="carousel-caption what-we-do-hero-carousel__caption text-start">
-                    <h2>House Chamber</h2>
-                    <p>Sharing the work of the people’s House.</p>
+                    <h2>Constituency Outreach</h2>
+                    <p>Creative and media resources that help legislative offices connect with constituents through clear, accessible communication.</p>
                   </div>
                 </div>
               </div>
@@ -128,52 +126,25 @@
     <div class="container">
       <div class="service-group mb-5">
         <div class="service-group__header">
-          <h3 class="service-group__title">Communication &amp; Public Affairs</h3>
-          <p class="service-group__text">Messaging, media relationships, and public-facing communication support for legislative offices.</p>
-        </div>
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-4">
-            <article class="service-tile p-4 rounded-4 shadow-sm h-100">
-              <h4 class="service-tile__title">News Writing &amp; Editing</h4>
-              <p class="service-tile__text">Professional writing support to help legislators clearly communicate ideas, updates, and public information.</p>
-            </article>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <article class="service-tile p-4 rounded-4 shadow-sm h-100">
-              <h4 class="service-tile__title">Press Conferences &amp; Media Briefings</h4>
-              <p class="service-tile__text">Coordination and communication support for legislative press events, public statements, and media outreach.</p>
-            </article>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <article class="service-tile p-4 rounded-4 shadow-sm h-100">
-              <h4 class="service-tile__title">News Monitoring</h4>
-              <p class="service-tile__text">Real-time news tracking and distribution to keep members informed on relevant coverage and developments.</p>
-            </article>
-          </div>
-        </div>
-      </div>
-
-      <div class="service-group mb-5">
-        <div class="service-group__header">
-          <h3 class="service-group__title">Creative &amp; Outreach Services</h3>
+          <h2 class="service-group__title">Creative &amp; Outreach Services</h2>
           <p class="service-group__text">Design, print, and engagement services that help offices reach constituents more effectively.</p>
         </div>
-        <div class="row g-4">
+        <div class="row g-4 justify-content-center">
           <div class="col-md-6 col-lg-4">
             <article class="service-tile p-4 rounded-4 shadow-sm h-100">
-              <h4 class="service-tile__title">Graphic Design</h4>
+              <h3 class="service-tile__title">Graphic Design</h3>
               <p class="service-tile__text">Custom visual design for publications, campaigns, informational materials, and legislative communications.</p>
             </article>
           </div>
           <div class="col-md-6 col-lg-4">
             <article class="service-tile p-4 rounded-4 shadow-sm h-100">
-              <h4 class="service-tile__title">Direct Mail Marketing</h4>
+              <h3 class="service-tile__title">Direct Mail Marketing</h3>
               <p class="service-tile__text">Development of mailers, surveys, brochures, pamphlets, and other print communication pieces.</p>
             </article>
           </div>
           <div class="col-md-6 col-lg-4">
             <article class="service-tile p-4 rounded-4 shadow-sm h-100">
-              <h4 class="service-tile__title">Constituency Outreach</h4>
+              <h3 class="service-tile__title">Constituency Outreach</h3>
               <p class="service-tile__text">Support for building stronger public engagement and communication opportunities with Louisiana citizens.</p>
             </article>
           </div>
@@ -182,26 +153,47 @@
 
       <div class="service-group mb-5">
         <div class="service-group__header">
-          <h3 class="service-group__title">Media Production &amp; Digital Services</h3>
+          <h2 class="service-group__title">Media Production &amp; Digital Services</h2>
           <p class="service-group__text">Technical, visual, and online communication support across legislative platforms and proceedings.</p>
         </div>
-        <div class="row g-4">
+        <div class="row g-4 justify-content-center">
           <div class="col-md-6 col-lg-4">
             <article class="service-tile p-4 rounded-4 shadow-sm h-100">
-              <h4 class="service-tile__title">Photography &amp; Videography</h4>
+              <h3 class="service-tile__title">Photography &amp; Videography</h3>
               <p class="service-tile__text">Coverage of legislative meetings, events, and other official activities through dedicated visual media support.</p>
             </article>
           </div>
           <div class="col-md-6 col-lg-4">
             <article class="service-tile p-4 rounded-4 shadow-sm h-100">
-              <h4 class="service-tile__title">Audio / Video Management</h4>
-              <p class="service-tile__text">Oversight of technical media systems and support for the Capitolâ€™s camera, audio, and cable operations.</p>
+              <h3 class="service-tile__title">Video Studio</h3>
+              <p class="service-tile__text">Professional studio support for video recording, interviews, live production, audio capture, and legislative media projects.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-group mb-5">
+        <div class="service-group__header">
+          <h2 class="service-group__title">Communication &amp; Public Affairs</h2>
+          <p class="service-group__text">Messaging, media relationships, and public-facing communication support for legislative offices.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <article class="service-tile p-4 rounded-4 shadow-sm h-100">
+              <h3 class="service-tile__title">News Writing &amp; Editing</h3>
+              <p class="service-tile__text">Professional writing support to help legislators clearly communicate ideas, updates, and public information.</p>
             </article>
           </div>
           <div class="col-md-6 col-lg-4">
             <article class="service-tile p-4 rounded-4 shadow-sm h-100">
-              <h4 class="service-tile__title">Video Streaming &amp; Web Design</h4>
-              <p class="service-tile__text">Management of legislative web experiences and online streaming for chambers, committees, and partner entities.</p>
+              <h3 class="service-tile__title">Press Conferences &amp; Media Briefings</h3>
+              <p class="service-tile__text">Coordination and communication support for legislative press events, public statements, and media outreach.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="service-tile p-4 rounded-4 shadow-sm h-100">
+              <h3 class="service-tile__title">News Monitoring</h3>
+              <p class="service-tile__text">Real-time news tracking and distribution to keep members informed on relevant coverage and developments.</p>
             </article>
           </div>
         </div>
@@ -209,19 +201,19 @@
 
       <div class="service-group">
         <div class="service-group__header">
-          <h3 class="service-group__title">Public Education &amp; Access</h3>
+          <h2 class="service-group__title">Public Education &amp; Access</h2>
           <p class="service-group__text">Programs and services that help the public, schools, and media better connect with the Legislature.</p>
         </div>
         <div class="row g-4 justify-content-center">
           <div class="col-md-6 col-lg-4">
             <article class="service-tile p-4 rounded-4 shadow-sm h-100">
-              <h4 class="service-tile__title">Civic Education</h4>
+              <h3 class="service-tile__title">Civic Education</h3>
               <p class="service-tile__text">Support for educational outreach that helps students understand government, civics, and the legislative process.</p>
             </article>
           </div>
           <div class="col-md-6 col-lg-4">
             <article class="service-tile p-4 rounded-4 shadow-sm h-100">
-              <h4 class="service-tile__title">Press Credentialing</h4>
+              <h3 class="service-tile__title">Press Credentialing</h3>
               <p class="service-tile__text">Credentialing services for working members of the news media covering legislative proceedings.</p>
             </article>
           </div>
@@ -236,7 +228,6 @@
         <div class="spotlight-card__inner mx-auto px-4 px-lg-5">
         <div class="row align-items-center justify-content-between g-4">
           <div class="col-lg-8">
-            <span class="spotlight-card__eyebrow d-inline-block rounded-pill fw-bold text-uppercase">Service Requests</span>
 
             <h2 class="spotlight-card__title">
               Contact the Legislative Communications Office
@@ -258,10 +249,16 @@
     </div>
   </section>
 
+  </main>
+
   <footer class="footer-strip py-3">
-    <div class="container d-md-flex justify-content-between align-items-center gap-2">
-      <div>Louisiana Legislature · Legislative Communications Office</div>
-      <div>What We Do</div>
+    <div class="container d-md-flex justify-content-between align-items-center gap-3">
+      <div>Louisiana Legislature · Legislative Communications Office · Web Team</div>
+      <div class="footer-strip__links d-flex flex-wrap align-items-center gap-2 gap-md-3">
+        <span class="footer-strip__link-label">Official websites</span>
+        <a href="https://house.louisiana.gov/" target="_blank" rel="noopener noreferrer">House</a>
+        <a href="https://senate.la.gov/" target="_blank" rel="noopener noreferrer">Senate</a>
+      </div>
     </div>
   </footer>
 
